@@ -1,0 +1,308 @@
+@font-face {
+    font-family: "mazius";
+    src: url("./font/Mazius\ Display\ Extraitalic.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(110, 177, 129);
+    /*rgb(255, 69, 1)*/
+    font-size: 10px;
+    -webkit-font-smoothing: antialiased;
+    cursor: crosshair;
+}
+
+footer {
+    bottom: 0;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'mazius';
+    font-style: normal;
+    font-weight: lighter;
+    color: black;
+    text-align: left;
+    line-height: 0.8em;
+    padding: 0em 0em 0em 0em;
+    cursor: crosshair;
+}
+
+h2 {
+    color: black;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: lighter;
+    line-height: 1.25em;
+    font-family: 'mazius';
+    font-style: normal;
+    padding: 0.5em 0em 2em 0em;
+    cursor: crosshair;
+}
+
+h3 {
+    color: black;
+    text-align: left;
+    font-size: 1.3em;
+    line-height: 1em;
+    font-family: 'mazius';
+    font-style: normal;
+    font-weight: lighter;
+    padding: 0em 0em 1em 0em;
+    cursor: crosshair;
+}
+
+.a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100vw;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.titre {
+    font-size: 20em;
+    font-family: 'mazius';
+    font-style: normal;
+    color: black;
+    cursor: crosshair;
+    text-align: center;
+    padding: 0.6em 0em 0em 0em;
+}
+
+.soustitre {
+    font-size: 7em;
+    font-family: 'mazius';
+    font-style: normal;
+    color: black;
+    cursor: crosshair;
+    text-align: center;
+    padding: 0.1em 0em 0em 0em;
+}
+
+.adresse {
+    font-size: 3.5em;
+    font-family: 'mazius';
+    font-style: normal;
+    color: black;
+    cursor: crosshair;
+    text-align: center;
+    padding: 0.1em 0em 0em 0em;
+}
+
+div#colonne1 {
+    font-family: "mazius";
+    cursor: crosshair;
+    font-size: 2em;
+    color: black;
+    float: left;
+    width: 40vh;
+    padding: 2em 0em 1em 1em;
+    background: rgb(110, 177, 129);
+}
+
+div#colonne2 {
+    font-family: "mazius";
+    font-size: 2em;
+    color: black;
+    float: right;
+    width: 39vh;
+    height: 100vh;
+    margin-left: 10px;
+    background: rgb(110, 177, 129);
+    flex: auto;
+    cursor: crosshair;
+    overflow-y: scroll;
+    text-align: left;
+    padding: 2em 1em 1em 0em;
+}
+
+div#centre {
+    width: auto;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(110, 177, 129);
+    text-align: center;
+    flex: auto;
+    cursor: crosshair;
+    overflow-y: scroll;
+    padding: 4em 0em 0em 0em;
+}
+
+.labeur {
+    color: black;
+    font-family: "mazius";
+    flex: auto;
+    width: 22%;
+    height: 60vh;
+    overflow-y: scroll;
+    text-align: left;
+    padding: 1em 0 1em 1em;
+}
+
+td img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#b {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+#whitespace {
+    min-width: 25vw;
+}
+
+.infobulle1 {
+    /* les .infobulle deviennent référents */
+    cursor: crosshair;
+}
+
+.infobulle:hover::after,
+.infobulle:focus::after {
+    position: absolute;
+    background-color: white;
+    font-size: 0.9em;
+    font-style: italic;
+    width: 15vw;
+    height: auto;
+    color: black;
+    content: attr(aria-label);
+    /*column-count: 2;*/
+    bottom: 20%;
+    right: 2%;
+    z-index: 1;
+    text-align: left;
+    /* pour s'afficher au dessus des éléments en position relative */
+    white-space: normal;
+    /* on interdit le retour à la ligne */
+    margin-left: 1em;
+    padding: 0.5em 1em;
+    border: 1px double black;
+}
+
+.photo {
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: 0.3em;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.photo:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.photo img {
+    justify-content: space-between;
+    width: auto;
+    height: 38vh;
+    max-height: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 4.2em;
+    }
+    h3 {
+        line-height: 1em;
+        padding: 0em 0em 1em 0em;
+    }
+    #a,
+    #b {
+        flex-direction: column;
+        padding: 0;
+        border: 0;
+    }
+    div#colonne1 {
+        color: black;
+        width: auto;
+        padding: 2em 0em 1em 2em;
+    }
+    div#colonne2 {
+        float: left;
+        width: auto;
+        height: auto;
+        flex: auto;
+        text-align: left;
+        padding: 1em 0em 0em 2em;
+    }
+    div#centre {
+        width: auto;
+        height: auto;
+        text-align: center;
+        flex: auto;
+        padding: 1em 0em 0em 2em;
+    }
+    .photo {
+        justify-content: space-between;
+    }
+    .photo img {
+        margin: 0 0 1em 0;
+        width: 30vw;
+        height: auto;
+    }
+    .infobulle:hover::after,
+    .infobulle:focus::after {
+        width: 30vh;
+        height: auto;
+        bottom: 10%;
+        left: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .titre {
+        font-size: 12em;
+    }
+    .soustitre {
+        font-size: 5em;
+    }
+    .adresse {
+        font-size: 3em;
+    }
+    h2 {
+        column-count: 1;
+        padding-bottom: 0.5em;
+    }
+    .photo img {
+        margin: 0.5em 0.5em 0.5em 0.5em;
+        width: 45vw;
+        height: auto;
+    }
+    div#colonne1 {
+        width: 70vh;
+        padding: 2em 0em 1em 1em;
+    }
+    div#colonne2 {
+        width: 70vh;
+        height: auto;
+        padding: 0em 0em 0em 0.5em;
+    }
+    div#centre {
+        width: 70vh;
+        height: auto;
+        padding: 2em 0em 0em 1em;
+    }
+}
