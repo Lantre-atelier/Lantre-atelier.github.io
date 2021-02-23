@@ -294,7 +294,7 @@ div#centre {
     .infobulle:focus::after {
         width: 45%;
         height: auto;
-        bottom: -20%;
+        bottom: -40%;
         left: 40%;
     }
 }
