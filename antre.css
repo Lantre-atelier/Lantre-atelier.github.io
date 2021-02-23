@@ -1,6 +1,11 @@
 @font-face {
     font-family: "mazius";
-    src: url("./font/Mazius\ Display\ Regular.otf");
+    src: url("./font/Mazius\ Display\ Extraitalic.otf");
+}
+
+@font-face {
+    font-family: "ortica";
+    src: url("./font/Ortica-Light.otf");
 }
 
 * {
@@ -11,7 +16,6 @@
 
 body {
     background-color: rgb(110, 177, 129);
-    /*rgb(255, 69, 1)*/
     font-size: 10px;
     -webkit-font-smoothing: antialiased;
     cursor: crosshair;
@@ -39,7 +43,7 @@ h2 {
     font-size: 1.5em;
     font-weight: lighter;
     line-height: 1.25em;
-    font-family: 'mazius';
+    font-family: 'ortica';
     font-style: normal;
     padding: 0.5em 0em 2em 0em;
     cursor: crosshair;
@@ -50,7 +54,7 @@ h3 {
     text-align: left;
     font-size: 1.3em;
     line-height: 1em;
-    font-family: 'mazius';
+    font-family: 'ortica';
     font-style: normal;
     font-weight: lighter;
     padding: 0em 0em 1em 0em;
@@ -91,8 +95,8 @@ p {
 }
 
 .soustitre {
-    font-size: 7em;
-    font-family: 'mazius';
+    font-size: 4em;
+    font-family: 'ortica';
     font-style: normal;
     color: black;
     cursor: crosshair;
@@ -101,8 +105,8 @@ p {
 }
 
 .adresse {
-    font-size: 3.5em;
-    font-family: 'mazius';
+    font-size: 3em;
+    font-family: 'ortica';
     font-style: normal;
     color: black;
     cursor: crosshair;
@@ -116,25 +120,23 @@ p {
 }
 
 div#colonne1 {
-    font-family: "mazius";
+    font-family: "ortica";
     cursor: crosshair;
     font-size: 2em;
     color: black;
     float: left;
     width: 52vh;
     padding: 2em 0em 1em 1em;
-    background: rgb(110, 177, 129);
 }
 
 div#colonne2 {
-    font-family: "mazius";
+    font-family: "ortica";
     font-size: 2em;
     color: black;
     float: right;
     width: 41vh;
     height: 100vh;
     margin-left: 10px;
-    background: rgb(110, 177, 129);
     flex: auto;
     cursor: crosshair;
     overflow-y: scroll;
@@ -146,7 +148,6 @@ div#centre {
     width: auto;
     height: 100vh;
     overflow: hidden;
-    background: rgb(110, 177, 129);
     text-align: center;
     flex: auto;
     cursor: crosshair;
@@ -167,7 +168,7 @@ div#centre {
 .infobulle:focus::after {
     position: absolute;
     background-color: white;
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-indent: 15%;
     width: 20vw;
     height: auto;
@@ -222,19 +223,19 @@ div#centre {
     }
     div#colonne1 {
         color: black;
-        width: auto;
+        width: 100%;
         padding: 2em 0em 1em 2em;
     }
     div#colonne2 {
         float: left;
-        width: auto;
+        width: 100%;
         height: auto;
         flex: auto;
         text-align: left;
         padding: 1em 0em 0em 2em;
     }
     div#centre {
-        width: auto;
+        width: 100%;
         height: auto;
         text-align: center;
         flex: auto;
@@ -250,9 +251,9 @@ div#centre {
     }
     .infobulle:hover::after,
     .infobulle:focus::after {
-        width: 30vh;
+        width: 50%;
         height: auto;
-        bottom: 10%;
+        bottom: -5em;
         left: 40%;
     }
 }
@@ -277,17 +278,24 @@ div#centre {
         height: auto;
     }
     div#colonne1 {
-        width: 70vh;
+        width: 100%;
         padding: 2em 0em 1em 1em;
     }
     div#colonne2 {
-        width: 70vh;
+        width: 100%;
         height: auto;
-        padding: 0em 0em 0em 0.5em;
+        padding: 0em 10em 0em 0.5em;
     }
     div#centre {
-        width: 70vh;
+        width: 100%;
         height: auto;
         padding: 2em 0em 0em 1em;
+    }
+    .infobulle:hover::after,
+    .infobulle:focus::after {
+        width: 45%;
+        height: auto;
+        bottom: -10em;
+        left: 40%;
     }
 }
