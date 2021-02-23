@@ -274,7 +274,7 @@ div#centre {
     }
     .photo img {
         margin: 0.5em 0.5em 0.5em 0.5em;
-        width: 45vw;
+        width: 40vw;
         height: auto;
     }
     div#colonne1 {
@@ -295,7 +295,7 @@ div#centre {
     .infobulle:focus::after {
         width: 45%;
         height: auto;
-        bottom: -10em;
+        bottom: -50%;
         left: 40%;
     }
 }
