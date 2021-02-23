@@ -269,12 +269,11 @@ div#centre {
         font-size: 3em;
     }
     h2 {
-        column-count: 1;
         padding-bottom: 0.5em;
     }
     .photo img {
-        margin: 0.5em 0.5em 0.5em 0.5em;
-        width: 40vw;
+        margin: 0 0 1em 0;
+        width: 45vw;
         height: auto;
     }
     div#colonne1 {
@@ -295,7 +294,7 @@ div#centre {
     .infobulle:focus::after {
         width: 45%;
         height: auto;
-        bottom: -50%;
+        bottom: -20%;
         left: 40%;
     }
 }
