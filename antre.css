@@ -37,7 +37,7 @@ Design by Clémence Fontaine           `--------'
 }
 
 body {
-    background-color: rgb(110, 177, 129);
+    background-color: white;
     font-size: 10px;
     -webkit-font-smoothing: antialiased;
     cursor: crosshair;
@@ -52,7 +52,7 @@ h1 {
     font-family: 'mazius';
     font-style: normal;
     font-weight: lighter;
-    color: black;
+    color: rgb(7, 34, 182);
     text-align: left;
     line-height: 0.8em;
     padding: 0em 0em 0em 0em;
@@ -60,7 +60,7 @@ h1 {
 }
 
 h2 {
-    color: black;
+    color: rgb(7, 34, 182);
     text-align: left;
     font-size: 1.5em;
     font-weight: lighter;
@@ -72,7 +72,7 @@ h2 {
 }
 
 h3 {
-    color: black;
+    color: rgb(7, 34, 182);
     text-align: left;
     font-size: 1.3em;
     line-height: 1em;
@@ -85,7 +85,7 @@ h3 {
 
 .a {
     text-decoration: none;
-    color: black;
+    color: rgb(7, 34, 182);
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -93,12 +93,12 @@ h3 {
 }
 
 a:link {
-    color: black;
+    color: rgb(7, 34, 182);
     text-decoration: none;
 }
 
 a:visited {
-    color: black;
+    color: rgb(7, 34, 182);
     text-decoration: none;
 }
 
@@ -110,7 +110,7 @@ p {
     font-size: 20em;
     font-family: 'mazius';
     font-style: normal;
-    color: black;
+    color: rgb(7, 34, 182);
     cursor: crosshair;
     text-align: center;
     padding: 0.6em 0em 0em 0em;
@@ -120,7 +120,7 @@ p {
     font-size: 4em;
     font-family: 'ortica';
     font-style: normal;
-    color: black;
+    color: rgb(7, 34, 182);
     cursor: crosshair;
     text-align: center;
     padding: 0.1em 0em 0em 0em;
@@ -130,7 +130,7 @@ p {
     font-size: 3em;
     font-family: 'ortica';
     font-style: normal;
-    color: black;
+    color: rgb(7, 34, 182);
     cursor: crosshair;
     text-align: center;
     padding: 0.1em 0em 0em 0em;
@@ -145,7 +145,7 @@ div#colonne1 {
     font-family: "ortica";
     cursor: crosshair;
     font-size: 2em;
-    color: black;
+    color: rgb(7, 34, 182);
     float: left;
     width: 52vh;
     padding: 2em 0em 1em 1em;
@@ -154,7 +154,7 @@ div#colonne1 {
 div#colonne2 {
     font-family: "ortica";
     font-size: 2em;
-    color: black;
+    color: rgb(7, 34, 182);
     float: right;
     width: 41vh;
     height: 100vh;
@@ -189,12 +189,12 @@ div#centre {
 .infobulle:hover::after,
 .infobulle:focus::after {
     position: absolute;
-    background-color: white;
+    background-color: rgb(7, 34, 182);
     font-size: 0.8em;
     text-indent: 15%;
     width: 20vw;
     height: auto;
-    color: black;
+    color: white;
     content: attr(aria-label);
     bottom: 5%;
     right: 2%;
@@ -205,7 +205,7 @@ div#centre {
     /* on interdit le retour à la ligne */
     margin-left: 1em;
     padding: 0.5em 1em;
-    border: 1px double black;
+    border: 1px double rgb(7, 34, 182);
 }
 
 .photo {
