@@ -67,7 +67,7 @@ h2 {
     line-height: 1.25em;
     font-family: 'ortica';
     font-style: normal;
-    padding: 0.5em 0em 2em 0em;
+    padding: 0.5em 0em 0.5em 0em;
     cursor: crosshair;
 }
 
@@ -81,6 +81,21 @@ h3 {
     font-weight: lighter;
     padding: 0em 0em 1em 0em;
     cursor: crosshair;
+}
+
+h4 {
+    color: rgb(7, 34, 182);
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    font-family: 'ortica';
+    font-style: normal;
+    font-weight: lighter;
+    cursor: crosshair;
+}
+
+h3:hover {
+    font-weight: bolder;
 }
 
 .a {
@@ -126,17 +141,9 @@ p {
     padding: 0.1em 0em 0em 0em;
 }
 
-.adresse {
-    font-size: 3em;
-    font-family: 'ortica';
-    font-style: normal;
-    color: rgb(7, 34, 182);
-    cursor: crosshair;
-    text-align: center;
-    padding: 0.1em 0em 0em 0em;
-}
-
 .logo {
+    position: fixed;
+    bottom: 10%;
     text-indent: 0%;
     line-height: 40px;
 }
@@ -147,7 +154,7 @@ div#colonne1 {
     font-size: 2em;
     color: rgb(7, 34, 182);
     float: left;
-    width: 52vh;
+    width: 55vh;
     padding: 2em 0em 1em 1em;
 }
 
@@ -191,13 +198,37 @@ div#centre {
     position: absolute;
     background-color: rgb(7, 34, 182);
     font-size: 0.8em;
-    text-indent: 15%;
     width: 20vw;
     height: auto;
     color: white;
     content: attr(aria-label);
     bottom: 5%;
     right: 2%;
+    z-index: 1;
+    text-align: left;
+    /* pour s'afficher au dessus des éléments en position relative */
+    white-space: pre-line;
+    /* on interdit le retour à la ligne */
+    margin-left: 1em;
+    padding: 0.5em 1em;
+    border: 1px double rgb(7, 34, 182);
+}
+
+.infobulle1 {
+    /* les .infobulle deviennent référents */
+    cursor: crosshair;
+}
+
+.infobulle1:hover::after,
+.infobulle1:focus::after {
+    position: absolute;
+    font-size: 0.8em;
+    width: 25vw;
+    height: auto;
+    color: rgb(7, 34, 182);
+    content: attr(aria-label);
+    top: 25%;
+    left: 0%;
     z-index: 1;
     text-align: left;
     /* pour s'afficher au dessus des éléments en position relative */
