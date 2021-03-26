@@ -167,15 +167,17 @@ Design by Clémence Fontaine           `--------'
     
     .logo {
         position: fixed;
-        bottom: 10%;
+        bottom: 1em;
+        right: 0em;
         line-height: 40px;
         font-family: "ortica";
         cursor: crosshair;
         font-size: 2em;
         color: rgb(7, 34, 182);
-        float: left;
-        width: 55vh;
-        padding: 2em 0em 1em 1em;
+        float: right;
+        width: 41vh;
+        margin-left: 10px;
+        padding: 2em 1em 1em 0em;
     }
     
     div#colonne1 {
@@ -218,32 +220,6 @@ Design by Clémence Fontaine           `--------'
         min-width: 25vw;
     }
     
-    .infobulle {
-        /* les .infobulle deviennent référents */
-        cursor: crosshair;
-    }
-    
-    .infobulle:hover::after,
-    .infobulle:focus::after {
-        position: absolute;
-        background-color: rgb(7, 34, 182);
-        font-size: 0.8em;
-        width: 20vw;
-        height: auto;
-        color: white;
-        content: attr(aria-label);
-        bottom: 5%;
-        right: 2%;
-        z-index: 1;
-        text-align: left;
-        /* pour s'afficher au dessus des éléments en position relative */
-        white-space: pre-line;
-        /* on interdit le retour à la ligne */
-        margin-left: 1em;
-        padding: 0.5em 1em;
-        border: 1px double rgb(7, 34, 182);
-    }
-    
     .infobulle1 {
         /* les .infobulle deviennent référents */
         cursor: crosshair;
@@ -252,12 +228,13 @@ Design by Clémence Fontaine           `--------'
     .infobulle1:hover::after,
     .infobulle1:focus::after {
         position: absolute;
+        background-color: rgb(7, 34, 182);
         font-size: 0.8em;
         width: 25vw;
         height: auto;
-        color: rgb(7, 34, 182);
+        color: white;
         content: attr(aria-label);
-        top: 25%;
+        top: 30%;
         left: 0%;
         z-index: 1;
         text-align: left;
@@ -337,10 +314,10 @@ Design by Clémence Fontaine           `--------'
             display: block;
             width: 100%;
             column-count: 1;
-            font-size: 1.5em;
+            font-size: 1em;
             color: white;
             padding: 1em 2em 1em 2em;
-            background-color: rgb(7, 34, 182);
+            background-color: rgb(7, 33, 182);
         }
         .photo {
             justify-content: space-between;
