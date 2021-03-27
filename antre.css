@@ -360,16 +360,16 @@ Design by Clémence Fontaine           `--------'
             height: auto;
         }
         div#colonne1 {
-            width: 95%;
+            width: 98%;
             padding: 2em 0em 1em 1em;
         }
         div#colonne2 {
-            width: 95%;
+            width: 98%;
             height: auto;
             padding: 0em 10em 0em 0.5em;
         }
         div#centre {
-            width: 95%;
+            width: 98%;
             height: auto;
             padding: 0em 0em 0em 0.5em;
         }
