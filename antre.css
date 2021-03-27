@@ -364,9 +364,9 @@ Design by Clémence Fontaine           `--------'
             padding: 2em 0em 1em 1em;
         }
         div#colonne2 {
-            width: 100%;
+            width: auto;
             height: auto;
-            padding: 0em 0em 0em 1em;
+            padding: 0em 0em 1em 1em;
         }
         div#centre {
             width: 98%;
